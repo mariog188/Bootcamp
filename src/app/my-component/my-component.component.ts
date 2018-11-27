@@ -10,6 +10,12 @@ export class MyComponentComponent implements OnInit {
 	count = 0;
 	imageSource = 'https://www.facevertizing.com/wp-content/uploads/2016/05/Nailed-It-Baby-Meme-06.jpg';
 	disabled = true;
+
+	disabledClick(event) {
+		console.log(event.target.value);
+		alert(event.target.value);
+	}
+
 	constructor() {}
 
 	ngOnInit() {}

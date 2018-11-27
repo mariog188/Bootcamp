@@ -8,7 +8,8 @@ My name is {{name}}
 <img [src]="imageSource">
 <br>
 <button (click)="disabled = !disabled">Turn on/off</button>
-<input [disabled]="disabled">
+<input [disabled]="disabled"
+       (keyup.Enter)="disabledClick($event)">
 <p>
   my-component works!
 </p>
