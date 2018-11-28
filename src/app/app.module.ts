@@ -5,6 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { MyComponentComponent } from './my-component/my-component.component';
 import { NgModule } from '@angular/core';
+import { MyHighlightDirective } from './my-highlight.directive';
 
 @NgModule({
 	declarations: [
@@ -12,6 +13,7 @@ import { NgModule } from '@angular/core';
 		MyComponentComponent,
 		DashboardComponent,
 		CardComponent,
+		MyHighlightDirective,
 	],
 	imports: [ BrowserModule, FormsModule ],
 	providers: [],
