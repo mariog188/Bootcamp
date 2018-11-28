@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { MyComponentComponent } from './my-component/my-component.component';
 import { NgModule } from '@angular/core';
 import { MyHighlightDirective } from './my-highlight.directive';
+import { ArrayLengthPipe } from './array-length.pipe';
+import { StringEmojiPipe } from './string-emoji.pipe';
 
 @NgModule({
 	declarations: [
@@ -14,6 +16,8 @@ import { MyHighlightDirective } from './my-highlight.directive';
 		DashboardComponent,
 		CardComponent,
 		MyHighlightDirective,
+		ArrayLengthPipe,
+		StringEmojiPipe,
 	],
 	imports: [ BrowserModule, FormsModule ],
 	providers: [],
