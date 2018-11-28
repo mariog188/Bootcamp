@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 	featureImage;
+	show1 = true;
 	images = [
 		'https://media3.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif?cid=3640f6095bfdd67944705454459725a9',
 		'https://media.giphy.com/media/yjGdFXjeQsDqJNSzE4/giphy.gif',

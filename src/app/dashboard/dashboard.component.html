@@ -23,3 +23,7 @@
 
 <img [src]="featureImage"
      alt="">
+<h2 *ngIf="show1; else bye">hola</h2>
+<ng-template #bye>
+  Chao
+</ng-template>
