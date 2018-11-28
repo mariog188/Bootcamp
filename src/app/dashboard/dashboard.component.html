@@ -1,7 +1,7 @@
 <h1>Dashboard</h1>
 
-<app-card (selectImage)="showImage($event)"
-          [image]="'https://media3.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif?cid=3640f6095bfdd67944705454459725a9'"></app-card>
+<!-- <app-card (selectImage)="showImage($event)"
+          [image]="'<https://media3.giphy.com/media/4Zo41lhzKt6iZ8xff9/giphy.gif?cid=3640f6095bfdd67944705454459725a9>'"></app-card>
 <app-card (selectImage)="showImage($event)"
           [image]="'https://media.giphy.com/media/yjGdFXjeQsDqJNSzE4/giphy.gif'"></app-card>
 <app-card (selectImage)="showImage($event)"
@@ -11,8 +11,14 @@
 <app-card (selectImage)="showImage($event)"
           [image]="'https://media.giphy.com/media/Nj0FfX9n53gf6/giphy.gif'"></app-card>
 <app-card (selectImage)="showImage($event)"
-          [image]="'https://media.giphy.com/media/gxRtSPjkXgdR6/giphy.gif'"></app-card>
+          [image]="'https://media.giphy.com/media/gxRtSPjkXgdR6/giphy.gif'"></app-card> -->
 
+<ul>
+  <li *ngFor="let url of images">
+    <app-card (selectImage)="showImage($event)"
+              [image]="url"></app-card>
+  </li>
+</ul>
 <br>
 
 <img [src]="featureImage"
